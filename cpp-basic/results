@@ -1,0 +1,77 @@
+FoP4CS Mini Application
+-----------------------
+Please select an option:
+1) Keep counting game
+2) Number Conversion tool
+3) Universal Product Code(UPC) Calculator
+4) Universal Product Code(UPC) Checker
+9) Quit
+Please Enter option: 1
+Keep counting
+-----------------------
+You will be presented with 8 addition questions.
+After the first question, the left-hand operand is
+the result of previous addition.
+Press enter to start...
+
+Question 1: 5 + 4 = 9
+Question 2: 9 + 9 = 18
+Question 3: 18 + 4 = 22
+Question 4: 22 + 3 = 25
+Question 5: 25 + 8 = 33
+Question 6: 33 + 3 = 36
+Question 7: 36 + 3 = 39
+Questions Completed in 21 seconds.
+Press any key to continue...
+
+FoP4CS Mini Application
+-----------------------
+Please select an option:
+1) Keep counting game
+2) Number Conversion tool
+3) Universal Product Code(UPC) Calculator
+4) Universal Product Code(UPC) Checker
+9) Quit
+Please Enter option: 2
+Number Conversion Tool
+Please enter positive decimal number : 140
+Binary : 10001100
+Hex : 8C
+Press any key to continue...
+
+FoP4CS Mini Application
+-----------------------
+Please select an option:
+1) Keep counting game
+2) Number Conversion tool
+3) Universal Product Code(UPC) Calculator
+4) Universal Product Code(UPC) Checker
+9) Quit
+Please Enter option: 3
+Universal Product Code (UPC) Calculator
+-----------------------
+This Calculator will take a 6-digit product code
+and generate a trailing 7th check digit to produce
+the final 7 digit UPC
+Please Enter 6 digit code
+411451
+The 7 digit final UPC is : 4114514
+Press any key to continue...
+
+FoP4CS Mini Application
+-----------------------
+Please select an option:
+1) Keep counting game
+2) Number Conversion tool
+3) Universal Product Code(UPC) Calculator
+4) Universal Product Code(UPC) Checker
+9) Quit
+Please Enter option: 4
+Universal Product Code (UPC) Checker
+-----------------------
+This Checker will take a 7-digit product code
+and Validate if its correct UPC code or not
+Please Enter 7 digit UPC code
+4114514
+It's a valid UPC code : 4114514
+Press any key to continue...

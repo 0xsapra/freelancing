@@ -1,0 +1,58 @@
+// Include required header files here!
+
+
+// The name of the input file and output file
+#define IN_FILE "quotes.txt"
+#define OUT_FILE "output.txt"
+
+// The maximum number of quotes we can read from input file
+#define MAX_QUOTES 100
+
+// The maximum size of a quote (string) in the IN_FILE file
+#define MAX_LEN 1000
+
+// This function will be used in sorting to swap strings ("pointers").
+void swap(char**, char**);
+
+// Selection Sort function here.
+void selection_sort(char**, size_t);
+
+// Read quotes from file and add them to an array. This functions adjusts the size of quotes!
+// Note: second parameter (size_t) should reflect the number of quotes we will read from the file!
+void read_in(char**, size_t*);
+
+// Print the quotes using array of pointers.
+void print_out(char**, size_t);
+
+// Save the sorted quotes in the OUT_FILE file (size_t here is linked to MAX_QUOTES or actual number of quotes!)
+void write_out(char**, size_t);
+
+// Free memory!
+void free_memory(char**, size_t);
+
+
+int main() {
+
+    // Create array of pointers. Each pointer should point to heap memory where each quote is kept. 
+    // I.e. quotes[0] points to first quote saved on the heap.
+    char *quotes[MAX_QUOTES];
+
+    // Number of quotes in the file quotes.txt. We assume initially that file has MAX_QUOTES quotes.
+    // Must be adjusted inside the function read_in when the file is read!
+    size_t size=MAX_QUOTES; 
+
+    // Read quotes from file and place them into array quotes. 
+    // Note: size reflects how many quotes we read from the file (between 0 and MAX_QUOTES).
+    read_in(quotes, &size);
+
+    selection_sort(quotes, size);
+    
+    print_out(quotes, size);
+    write_out(quotes, size);
+    
+    free_memory(quotes, size);
+    
+    return (0);
+}
+
+// You need to create functions according to prototypes defined above funciton main()!
