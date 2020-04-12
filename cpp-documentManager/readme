@@ -1,0 +1,11 @@
+# C structures and string manipulation.
+
+* to add paragraphs, to add lines to paragraphs, to replace text, and to edit a document.
+
+add_paragraph_after returns FAILURE if doc is
+NULL, the document already has the maximum number of paragraphs allowed (MAX PARAGRAPHS),
+or the paragraph number is larger than the number of paragraphs available; otherwise, the function
+returns SUCCESS.
+
+
+doc->number_of_paragraphs = number of paragraphs

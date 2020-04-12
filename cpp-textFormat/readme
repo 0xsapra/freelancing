@@ -1,0 +1,9 @@
+* prototypes for the functions should be in the text manipulation.h file.
+* Your code must be written in the file text manipulation.c.
+* Do not add a main function to the text manipulation.c file
+* One source of bugs is forgetting to add a null character to a string
+* Do not use dynamic memory allocation
+
+* gcc public01.c text manipulation.c
+* gcc -ansi -Wall -g -O0 -Wwrite-strings -Wshadow -pedantic-errors -fstack-protector-all 
+

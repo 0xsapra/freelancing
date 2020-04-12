@@ -1,0 +1,7 @@
+procedure sum_first_n_even_number(a <- [1..n], n <- int )
+	sum <- 0
+	i <- 0
+	for i from 0 to n:
+		value <- a[i]
+		sum <- sum + value
+	return sum

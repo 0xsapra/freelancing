@@ -1,0 +1,4 @@
+gcc main.c -lm && ./a.out  < public01.txt   | diff public01-out.txt -
+gcc main.c -lm && ./a.out  < public02-in.txt   | diff public02-out.txt -
+gcc main.c -lm && ./a.out  < public03-in.txt   | diff public03-out.txt -
+gcc main.c -lm && ./a.out  < public04-in.txt   | diff public04-out.txt -

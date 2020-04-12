@@ -1,0 +1,20 @@
+* Person is base class[name, nationality]
+	* Athelete is derived from Person[distance]
+		* override <<
+
+* Use heap to create new Athletes
+* stores atheles in vector of athelete
+* header files:
+	csvReader
+	Person
+	Athelete
+
+# TASK LIST
+----
+* validate input
+* commented 
+* modular
+* heap
+* load csv 
+* Inheritace 
+ 

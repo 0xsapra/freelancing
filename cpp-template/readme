@@ -1,0 +1,37 @@
+ * generic linked list ADT
+
+ * 
+ ```
+template <typename E>
+class SLinkedList { // a singly linked list
+	public:
+		SLinkedList(); // empty list constructor
+		~SLinkedList(); // destructor
+		bool empty() const; // is list empty? Returns true or false
+		const E& front() const; // returns front element
+		const E& last() const; // return last element
+		void addFront(const E& e); // add e to front of list
+		void addLast(const E& e); // add e to rear of list
+		void removeFront(); // remove the front element from list
+		void removeLast(); // remove the last element from list
+		void print(); // print the list
+	private:
+		SNode<E>* head; // head of the list - a pointer to the first node
+		SNode<E>* tail; // tail of the list - apointer to the last node
+};
+```
+
+
+*
+```
+Be sure to take into account that one might try to remove a node from an empty list. Put (or
+download from SLATE) the following exception in the file MyExceptions.h. Then you can
+throw new linkedlistException(“ empty linked list”), for example.
+class LinkedException : public RuntimeException {
+	public:
+		LinkedListException(const string& err) : RuntimeException(err) {}
+	};
+```
+
+* 
+`The print function also throws a LinkedListException if the list is empty`
